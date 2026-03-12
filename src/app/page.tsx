@@ -128,24 +128,12 @@ export default function HomePage() {
       <div className="h-60" />
 
       {/* Profile Section */}
-      {renderSection(
-        profileRef,
-        "profile",
-        "Profile Section",
-        "#ddd",
-        "text-green-800",
-      )}
+      {renderSection(profileRef,"profile","Profile Section","#ddd","text-green-800")}
 
       <div className="h-60" />
 
       {/* Settings Section */}
-      {renderSection(
-        settingsRef,
-        "settings",
-        "Settings Section",
-        "#ccc",
-        "text-red-800",
-      )}
+      {renderSection(settingsRef,"settings","Settings Section","#ccc","text-red-800")}
     </div>
   );
 }

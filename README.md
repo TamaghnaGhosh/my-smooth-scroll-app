@@ -143,14 +143,14 @@ What it does:
 useEffect(() => {
 	const elements = [homeRef.current, profileRef.current, settingsRef.current].filter(Boolean) as HTMLDivElement[];
 	if (!elements.length) return;
-	const obs = new IntersectionObserver((entries) =&gt; {
-		entries.forEach((entry) =&gt; {
+	const obs = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
 			const el = entry.target as HTMLDivElement;
 			if (entry.isIntersecting) el.classList.add('in-view');
 			else el.classList.remove('in-view');
 		});
 	}, { threshold: 0.2 });
-	elements.forEach((el) =&gt; obs.observe(el));
+	elements.forEach((el) => obs.observe(el));
 	return () => obs.disconnect();
 }, []);
 ```

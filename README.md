@@ -140,7 +140,7 @@ What it does:
 ### Entrance animation via IntersectionObserver
 
 ```ts
-useEffect(() =&gt; {
+useEffect(() => {
 	const elements = [homeRef.current, profileRef.current, settingsRef.current].filter(Boolean) as HTMLDivElement[];
 	if (!elements.length) return;
 	const obs = new IntersectionObserver((entries) =&gt; {

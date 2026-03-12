@@ -3,12 +3,6 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 
-const styles = {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-};
-
 export default function HomePage() {
   const homeRef = useRef<HTMLDivElement>(null);
   const profileRef = useRef<HTMLDivElement>(null);
